@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var pgDBConn = require('./pgDBConn');
+var pgDBConn = require('./routes/pgDBConn');
 pgDBConn.getUserList();
 
 var indexRouter = require('./routes/index');

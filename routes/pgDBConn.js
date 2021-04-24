@@ -10,7 +10,7 @@ const client = new Client({
 function GetUserList() {
     client.connect();
     client.query('SELECT * FROM stat.content_info', (err, res) => {
-        console.log(res);
+        console.log(res.rows.lengt);
         client.end();
     });
 };
